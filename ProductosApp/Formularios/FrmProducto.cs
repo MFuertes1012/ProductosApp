@@ -36,6 +36,8 @@ namespace ProductosApp.Formularios
                 Especie = (EspeciedeCuenta)cmbEspecie.SelectedIndex
             };
 
+            MessageBox.Show($"El valor unitario es de: {p.ValorUnidad} \n  El valor total es de: {p.ValorTotal}");
+
             inv.Create(p);
 
             Dispose();

@@ -1,4 +1,5 @@
 ﻿using AppCore.Interfaces;
+using Domain.Entities;
 using Domain.Enums;
 using Infraestructure.Inventario;
 using Infraestructure.Productos;
@@ -17,8 +18,11 @@ namespace ProductosApp.Formularios
     public partial class FrmProductos : Form
     {
         public InventarioModel inv;
+        public IProductoService productoService;
+
         public FrmProductos()
         {
+            this.productoService = productoService;
             InitializeComponent();
         }
 
@@ -39,6 +43,7 @@ namespace ProductosApp.Formularios
 
             rtbView.Text = $@"Saldo Final: {obj.CalcularSaldo()}
                               Existencias sobrantes: {inv.CalcularExistencias()}";
+
         }
 
         public InventarioModel SeleccionarObjeto()
@@ -66,5 +71,32 @@ namespace ProductosApp.Formularios
                 return aux;
             }
         }
+
+        private void PrintEmpleado()
+        {
+           Producto[] productos = productoService.FindAll();
+          // ProductoModel[] producto = productos;
+            if (productos == null)
+            {
+                rtbView.Text = "No hay elementos a mostrar.";
+                return;
+
+            }
+            rtbView.Text = "";
+           
+           //for (ProductoModel p in productos)
+            //{
+              // rtbView.AppendText(p.GetProductosAsJson());
+              //  rtbView.AppendText($"Entrada : {} \n");
+            //}
+        }
+
+
+
+
+
+
+
     }
+
 }

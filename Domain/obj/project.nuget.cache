@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ot9ieUhQFbJPvCe99gxL9Cr3ZkjN+RbsOMqvIrsqxqwbNhUELD0ap/acN7lRFYqbU1Tv8EwTBNR8vA7X1FKIig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Margie Fuertes\\Documents\\ProductosApp1M1\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Margie Fuertes\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Margie Fuertes\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Margie Fuertes\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

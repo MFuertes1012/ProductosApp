@@ -42,17 +42,19 @@
             this.flowLayoutPanel1.Controls.Add(this.btnNuevo);
             this.flowLayoutPanel1.Controls.Add(this.btnCerrar);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 495);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 322);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(873, 76);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(582, 49);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // btnNuevo
             // 
             this.btnNuevo.ForeColor = System.Drawing.Color.Green;
-            this.btnNuevo.Location = new System.Drawing.Point(734, 3);
+            this.btnNuevo.Location = new System.Drawing.Point(489, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(136, 54);
+            this.btnNuevo.Size = new System.Drawing.Size(91, 35);
             this.btnNuevo.TabIndex = 2;
             this.btnNuevo.Text = "Agregar nuevo registro";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -61,10 +63,9 @@
             // btnCerrar
             // 
             this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCerrar.Location = new System.Drawing.Point(550, 5);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(366, 3);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(177, 52);
+            this.btnCerrar.Size = new System.Drawing.Size(118, 34);
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -85,25 +86,28 @@
             "UEPS",
             "Promedio Ponderado",
             ""});
-            this.cmbFinderType.Location = new System.Drawing.Point(14, 15);
+            this.cmbFinderType.Location = new System.Drawing.Point(9, 10);
+            this.cmbFinderType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbFinderType.Name = "cmbFinderType";
-            this.cmbFinderType.Size = new System.Drawing.Size(418, 28);
+            this.cmbFinderType.Size = new System.Drawing.Size(280, 21);
             this.cmbFinderType.TabIndex = 1;
             // 
             // rtbView
             // 
-            this.rtbView.Location = new System.Drawing.Point(14, 52);
+            this.rtbView.Location = new System.Drawing.Point(9, 34);
+            this.rtbView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbView.Name = "rtbView";
             this.rtbView.ReadOnly = true;
-            this.rtbView.Size = new System.Drawing.Size(872, 437);
+            this.rtbView.Size = new System.Drawing.Size(583, 285);
             this.rtbView.TabIndex = 4;
             this.rtbView.Text = "";
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(723, 17);
+            this.btnCalcular.Location = new System.Drawing.Point(482, 11);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(160, 29);
+            this.btnCalcular.Size = new System.Drawing.Size(107, 19);
             this.btnCalcular.TabIndex = 5;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -111,13 +115,15 @@
             // 
             // FrmProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 583);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(600, 379);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.rtbView);
             this.Controls.Add(this.cmbFinderType);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmProductos";
             this.Text = "Catalogo de productos";
             this.flowLayoutPanel1.ResumeLayout(false);
